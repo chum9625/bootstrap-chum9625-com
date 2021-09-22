@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/starter.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>ChumTech | Design and develop of website</title>
+  </head>
+  <body>
+    <div class="col-md-8 py-5 px-3 mx-auto">
+      <header class="pb-3 mb-5 border-bottom">
+        <h1 class="h4">
+          <a
+            href="/"
+            class="d-flex align-items-center text-dark text-decoration-none"
+            ><img
+              src="./assets/img/header-h1-logo.svg"
+              width="192"
+              alt="チャムテックのロゴとロゴテキスト画像"
+            />
+            <span></span>
+          </a>
+        </h1>
+      </header>
+
+      <h1>Design and develop of website</h1>
+      <div class="col-lg-8 px-0">
+        <p class="lead">
+          ChumTechは横浜を拠点とするフリーランスのWeb制作事業者です。Webサイト（ホームページ）の制作、管理、運営などの業務をお手伝いします。
+        </p>
+        <p>だってめんどいじゃない</p>
+      </div>
+
+      <button
+        type="button"
+        class="btn btn-primary mr-3"
+        data-toggle="modal"
+        data-target="#exampleModal"
+      >
+        オスとでるよ
+      </button>
+      <a href="#" class="text-success">なにもでないよ</a>
+
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">成功しますた!</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              だってすばらしい才能のあるひとたちがすてきなテンプレートを用意してくれてるんですもの。しかもフリーなのいっぱいある。使わないともったいないよ。
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-5 w-25 mx-0" />
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Adding Bootstrap Icons</h2>
+          <p>
+            <a href="https://icons.getbootstrap.com">Bootstrap Icons</a> are
+            included with the SVG sprite here, but there are other
+            <a href="https://icons.getbootstrap.com/#usage">usage options</a>,
+            too. They're styleable with text utilities and more.
+          </p>
+
+          <svg class="bi text-danger" width="32" height="32">
+            <use
+              xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#heart-fill"
+            />
+          </svg>
+          <svg class="bi text-dark" width="32" height="32">
+            <use
+              xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#toggles"
+            />
+          </svg>
+          <svg class="bi text-primary" width="32" height="32">
+            <use
+              xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#shop"
+            />
+          </svg>
+        </div>
+
+        <div class="col-md-6">
+          <h2>Guides</h2>
+          <p>
+            Read more detailed instructions and documentation on using or
+            contributing to Bootstrap.
+          </p>
+          <ul class="icon-list">
+            <li>
+              <a
+                href="https://getbootstrap.com/docs/4.6/getting-started/introduction"
+                >Bootstrap quick start guide</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://getbootstrap.com/docs/4.6/getting-started/webpack"
+                >Bootstrap Webpack guide</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://getbootstrap.com/docs/4.6/getting-started/build-tools"
+                >Contributing to Bootstrap</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="my-5" />
+
+      <p class="text-muted">© ChumTech</p>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script type="module" src="assets/js/starter.js"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../../scss/style.scss"
+	],
+	"sourcesContent": [
+		"@charset \"UTF-8\";\r\n\r\nhtml {\r\n  // font-size: 100%;\r\n}\r\n\r\nbody {\r\n  font-family: \"Helvetica Neue\", Arial, \"Hiragino Kaku Gothic ProN\",\r\n    \"Hiragino Sans\", Meiryo, sans-serif;\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": "AAMA,AAAA,IAAI,AAAC,CACH,WAAW,CAAE,0FACwB,CACtC"
+}
