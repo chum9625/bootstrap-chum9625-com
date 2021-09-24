@@ -10,8 +10,9 @@
 
 - `bootstrap-npm-starter` は、Bootstrapの共著者である@mdoによって管理されている、Bootstrapを利用した新しいnpmプロジェクトを作成するためのGitHubテンプレートリポジトリです。
 - Bootstrap v4で構築されており、v5用に更新する予定です。
-- `npm start` はオリジナルと異なり、 `Brouser-sync` を組み込んでいます。
+- `npm start` はオリジナルと異なり、 `Browser-sync` を組み込んでいます。
 - Actions CI はオリジナルと異なり、FTP自動デプロイを実現しています。
+- 以下、主要説明部分について、Google翻訳したものを記載しています。
 
 <!-- [![Build Status](https://github.com/twbs/bootstrap-npm-starter/workflows/CI/badge.svg)](https://github.com/twbs/bootstrap-npm-starter/actions) -->
 
@@ -101,7 +102,10 @@ PurgeCSSはPostCSSプラグインであり、追加の[コマンドラインオ�
 
 ## Actions CI
 
-develop ブランチに push をトリガーとして、main ブランチマージとFTPアップロードの自動化。
+1. develop ブランチで開発
+2. push
+3. main ブランチに手動でマージ
+4. FTPアップロード
 ### Reference
 
 - [GitHub Actionsを使ってFTP自動デプロイ（Webサイト公開）を実現！ソフトを使った手動アップロードを卒業する](https://arrown-blog.com/githubactions-ftp-deploy/)
@@ -113,4 +117,4 @@ develop ブランチに push をトリガーとして、main ブランチマー�
 
 @mdo 2020-2021 and licensed MIT.
 
-@chum9625 2021 and licensed MIT.
+2021 @chum9625
