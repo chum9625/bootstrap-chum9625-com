@@ -1,33 +1,26 @@
 <p align="center">
-  <img src=".github/logo.png" width="300" height="175" alt="Bootstrap npm logo">
+  <img src=".github/logo-ct-375x130.png" width="375" height="130" alt="ChumTech logo">
 </p>
 
-<h3 align="center">Bootstrap npm starter template</h3>
+<h3 align="center">This source is for chum9625.com.</h3>
 
-<p align="center">Create new Bootstrap-powered npm projects in no time.</p>
+<p align="center">サイト chum9625.com は Bootstrap npm starter template を利用して作りました。</p>
 
 ## About
 
-`bootstrap-npm-starter` is a GitHub template repository for creating new Bootstrap-powered npm projects, maintained by Bootstrap co-author @mdo. You can also use it as your own Bootstrap prototyping sandbox. It's built with Bootstrap v4 with plans to update for v5.
+- このリポジトリの原本は、[`bootstrap-npm-starter`](https://github.com/twbs/bootstrap-npm-starter) です。
+- Bootstrap v4で構築されたHTMLシングルページです。
+- `npm start` に `Browser-sync` を組み込み更に効率化しました。
+- Actions CI は、mainブランチにpushすることでFTP自動デプロイを実現しています。
+- 以下、使い方など原本をGoogle翻訳し、私なりに解釈したものを記載しています。
 
-[![Build Status](https://github.com/twbs/bootstrap-npm-starter/workflows/CI/badge.svg)](https://github.com/twbs/bootstrap-npm-starter/actions)
-
-## Repo template
-
-Setup as a starter template, you can easily generate a new GitHub repository. From the repository homepage, click the `Use this template` button.
-
-## What's included
-
-- Single HTML page (`index.html`) to demonstrate how to include Bootstrap.
-- Includes [Bootstrap](https://getbootstrap.com) (currently using v4.6.0) source files via npm.
-- Includes [Bootstrap Icons](https://icons.getbootstrap.com) (v1.4.0), which includes over 1,200 icons available as SVGs and web fonts.
-- npm scripts (see `package.json`) for compiling and autoprefixing Sass, watching for changes, and starting a basic local server.
-- Example stylesheet (`scss/starter.scss`) highlighting two ways to include and customize Bootstrap.
-- Example JavaScript file (`assets/js/starter.js`) showing how to import all of Bootstrap, or just the parts you need.
+<!-- [![Build Status](https://github.com/twbs/bootstrap-npm-starter/workflows/CI/badge.svg)](https://github.com/twbs/bootstrap-npm-starter/actions) -->
 
 ## Usage
 
-Be sure to have [Node.js](https://nodejs.org/) installed before proceeding.
+1. [Node.js](https://nodejs.org/) インストール必須。
+2. 2つのターミナルタブを開いて、 `npm run server` と `npm run watch` を同時に実行する。
+3. ブラウザのURL欄に <http://localhost:3000> を指定し、動作中のローカルページを確認する。
 
 ```shell
 # Clone the repo
@@ -50,75 +43,71 @@ npm run server
 npm start
 ```
 
-For the most straightforward development, open two Terminal tabs to execute `npm run server` and `npm run watch` at the same time.
+### 主要コマンドライン
 
-Open <http://localhost:3000> to see the page in action.
+- ```npm start```
+- ```npm test```
+- ```npm run scriptName``` 
 
 ## Scripts
 
-The following npm scripts are available to you in this starter repo. With the exception of `npm start` and `npm test`, the remaining scripts can be run from your command line with `npm run scriptName`.
-
-| Script | Description |
+| Script | 説明 |
 | --- | --- |
-| `server` | Starts a local server (<http://localhost:3000>) for development |
-| `watch` | Automatically recompiles CSS as it watches the `scss` directory for changes |
-| `css` | Runs `css-compile` and `css-prefix` |
-| `css-compile` | Compiles source Sass into CSS |
-| `css-lint` | Runs [Stylelint](https://stylelint.io) against source Sass for code quality |
-| `css-prefix` | Runs [Autoprefixer](https://github.com/postcss/autoprefixer) on the compiled CSS |
-| `css-purge` | Runs [PurgeCSS](https://purgecss.com) to remove CSS that is unused by `index.html` |
-| `test` | Runs `css-lint` and `css`, in sequential order |
+| `server` | 開発用の [local server](http://localhost:3000) を起動します。 |
+| `watch` | `scss` ディレクトリの変更を監視しながらCSSを自動的に再コンパイルします。 |
+| `css` | `css-compile` と ` css-prefix` を実行します。 |
+| `css-compile` | ソースSassをCSSにコンパイルします。 |
+| `css-lint` | コード品質のためにソースSassに対して [Stylelint](https://stylelint.io) を実行します。 |
+| `css-prefix` | コンパイルされたCSSで [Autoprefixer](https://github.com/postcss/autoprefixer) を実行します。 |
+| `css-purge` | [PurgeCSS](https://purgecss.com) を実行して、 `index.html` で使用されていないCSSを削除します。|
+| `test` | `css-lint` と `css` を順番に実行します。 |
 
 ## Advanced usage
 
-Take this starter repository to another level with some built-in addons that you can enable and customize.
+さらに便利に使うための使用方法。
 
-### Optimizing CSS
+### CSSの最適化
 
-Before you start to use tools that remove Bootstrap styling like [PurgeCSS](#purgecss), you can make some broad optimizations by only including the stylesheets you think you'll need.
+[PurgeCSS](#purgecss) のようなBootstrapスタイルを削除するツールの使用を開始する前に、必要と思われるスタイルシートのみを含めることで、いくつかの広範な最適化を行うことができます。
 
-Look to the `scss/starter.scss` file for your two options of including all of Bootstrap, or a subset of our styles and components. By default we've only imported the stylesheets that Bootstrap requires plus those of the components we're planning to use.
+すべてのBootstrap、またはスタイルとコンポーネントのサブセットを含める2つのオプションについては、 `scss/starter.scss` ファイルを参照してください。 デフォルトでは、Bootstrapに必要なスタイルシートと、使用する予定のコンポーネントのスタイルシートのみをインポートしました。
 
-Uncomment specific lines as needed, then recompile to use them.
+必要に応じて特定の行のコメントを解除し、それらを使用するために再コンパイルします。
 
-### Optimizing JS
+### JSの最適化
 
-Similar to optimizing CSS, we publish individual scripts for each of our plugins. This allows you to import only what you need, versus the entire bundle and dependencies. For example, if you don't plan on using dropdowns, tooltips, or popovers, you can safely omit the Popper.js depdendency. Bootstrap 4 requires jQuery though, so you won't be able to safely remove that until v5 launches.
-
-See the `js/starter.js` file for an example of how to import all of Bootstrap's JS or just the individual pieces. By default we've only imported our modal JavaScript since we have no need for anything else.
-
-You can add more options here, or import the entire `bootstrap-bundle.min.js` file, to get all JavaScript plugins and Popper.js.
+CSSの最適化と同様に、プラグインごとに個別のスクリプトを公開します。 これにより、バンドル全体と依存関係ではなく、必要なものだけをインポートできます。 たとえば、ドロップダウン、ツールチップ、またはポップオーバーを使用する予定がない場合は、Popper.jsの依存関係を安全に省略できます。 ただし、Bootstrap 4にはjQueryが必要なため、v5が起動するまでjQueryを安全に削除することはできません。
 
 ### PurgeCSS
 
-[PurgeCSS](https://purgecss.com/) is a [PostCSS](https://postcss.org) plugin that removes unused CSS based on your site's HTML. It finds rulesets that are unused by your HTML and removes them, ensuring only what's needed is sent to your site's visitors while improving file size and performance.
+[PurgeCSS](https://purgecss.com/) は、サイトのHTMLに基づいて未使用のCSSを削除する [PostCSS](https://postcss.org) プラグインです。HTMLで使用されていないルールセットを見つけて削除し、ファイルサイズとパフォーマンスを向上させながら、必要なものだけがサイトの訪問者に送信されるようにします。
 
-We've included a single npm script that runs PurgeCSS against our single `index.html` file to remove unused styles from `assets/css/starter.css`.
 
-To purge your CSS, run `npm run css-purge` from the command line. This executes the following:
+単一の `index.html` ファイルに対して PurgeCSS を実行して、 `assets/css/starter.css` から未使用のスタイルを削除する単一のnpmスクリプトが含まれています。
+
+CSSをパージするには、コマンドラインから `npm run css-purge` を実行します。 これにより、以下が実行されます。
 
 ```shell
 npm purgecss --css assets/css/starter.css --content index.html --output assets/css/
 ```
 
-PurgeCSS is a PostCSS plugin and [can be configured](https://purgecss.com/configuration.html) to your exact needs with a little extra effort, including additional [command line options](https://purgecss.com/CLI.html).
+PurgeCSSはPostCSSプラグインであり、追加の[コマンドラインオプション](https://purgecss.com/CLI.html)など、少しの追加作業で正確なニーズに合わせて[構成できます](https://purgecss.com/configuration.html) 。 
 
 ## Actions CI
 
-We've included some simple GitHub Actions in this template repo. When you generate your new project from here, you'll have the same tests that run whenever a pull request is created. We've included Actions for the following:
+1. develop ブランチで開発しpush
+2. プルリクを投げる
+3. main ブランチに手動でマージするとアクション発動
+4. FTPアップロード
+### Reference
 
-- Stylelint for your CSS
-
-When your repository is generated, you won't see anything in the Actions tab until you create a new pull request. You can customize these Actions, add new ones, or remove them outright if you wish.
-
-[Learn more about GitHub Actions](https://github.com/features/actions), [read the Actions docs](https://help.github.com/en/actions), or [browse the Actions Marketplace](https://github.com/marketplace/actions).
-
-### Stylelint
-
-Stylelint is included, as is Bootstrap's default Stylelint config, [stylelint-config-twbs-bootstrap](https://github.com/twbs/stylelint-config-twbs-bootstrap). This is the same linter configuration we use in the main Bootstrap project. It's run via the `npm test` command, which is invoked in our `ci.yml` Actions workflow file.
-
-At the root of the repo, `.stylelintignore` is used to list files that we ignore when linting and `.stylelintrc` is where we tell Stylelint to use the Bootstrap config. The former is recommended based on your specific needs, while the latter is required.
+- [GitHub Actionsを使ってFTP自動デプロイ（Webサイト公開）を実現！ソフトを使った手動アップロードを卒業する](https://arrown-blog.com/githubactions-ftp-deploy/)
+- [Learn more about GitHub Actions](https://github.com/features/actions)
+- [read the Actions docs](https://help.github.com/en/actions)
+- [browse the Actions Marketplace](https://github.com/marketplace/actions).
 
 ## Copyright
 
-&copy; @mdo 2020-2021 and licensed MIT.
+© 2021 chum9625
+
+This software is released under the MIT License, see LICENSE.
