@@ -8,11 +8,11 @@
 
 ## About
 
-- このリポジトリは、@mdo氏のGitHubテンプレートリポジトリ [`bootstrap-npm-starter`](https://github.com/twbs/bootstrap-npm-starter) を基に作成したものです。
-- Bootstrap v4で構築。
-- `npm start` はオリジナル仕様に加え、 `Browser-sync` を組み込んでいます。
+- このリポジトリの原本は、[`bootstrap-npm-starter`](https://github.com/twbs/bootstrap-npm-starter) です。
+- Bootstrap v4で構築されたHTMLシングルページです。
+- `npm start` に `Browser-sync` を組み込み更に効率化しました。
 - Actions CI は、mainブランチにpushすることでFTP自動デプロイを実現しています。
-- 以下、使い方などGoogle翻訳し、私なりに解釈したものを記載しています。
+- 以下、使い方など原本をGoogle翻訳し、私なりに解釈したものを記載しています。
 
 <!-- [![Build Status](https://github.com/twbs/bootstrap-npm-starter/workflows/CI/badge.svg)](https://github.com/twbs/bootstrap-npm-starter/actions) -->
 
@@ -95,8 +95,8 @@ PurgeCSSはPostCSSプラグインであり、追加の[コマンドラインオ�
 
 ## Actions CI
 
-1. develop ブランチで開発
-2. push
+1. develop ブランチで開発しpush
+2. プルリクを投げる
 3. main ブランチに手動でマージするとアクション発動
 4. FTPアップロード
 ### Reference
