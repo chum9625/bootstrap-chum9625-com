@@ -108,6 +108,6 @@ PurgeCSSはPostCSSプラグインであり、追加の[コマンドラインオ�
 
 ## Copyright
 
-@ 2021 chum9625
+© 2021 chum9625
 
 This software is released under the MIT License, see LICENSE.
