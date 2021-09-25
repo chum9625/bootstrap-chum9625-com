@@ -8,26 +8,19 @@
 
 ## About
 
-- `bootstrap-npm-starter` は、Bootstrapの共著者である@mdoによって管理されている、Bootstrapを利用した新しいnpmプロジェクトを作成するためのGitHubテンプレートリポジトリです。
-- Bootstrap v4で構築されており、v5用に更新する予定です。
-- `npm start` はオリジナルと異なり、 `Browser-sync` を組み込んでいます。
-- Actions CI はオリジナルと異なり、FTP自動デプロイを実現しています。
-- 以下、主要説明部分について、Google翻訳したものを記載しています。
+- このリポジトリは、@mdo氏のGitHubテンプレートリポジトリ [`bootstrap-npm-starter`](https://github.com/twbs/bootstrap-npm-starter) を基に作成したものです。
+- Bootstrap v4で構築。
+- `npm start` はオリジナル仕様に加え、 `Browser-sync` を組み込んでいます。
+- Actions CI は、mainブランチにpushすることでFTP自動デプロイを実現しています。
+- 以下、使い方などGoogle翻訳し、私なりに解釈したものを記載しています。
 
 <!-- [![Build Status](https://github.com/twbs/bootstrap-npm-starter/workflows/CI/badge.svg)](https://github.com/twbs/bootstrap-npm-starter/actions) -->
 
-## What's included
-
-- Single HTML page (`index.html`) to demonstrate how to include Bootstrap.
-- Includes [Bootstrap](https://getbootstrap.com) (currently using v4.6.0) source files via npm.
-- Includes [Bootstrap Icons](https://icons.getbootstrap.com) (v1.4.0), which includes over 1,200 icons available as SVGs and web fonts.
-- npm scripts (see `package.json`) for compiling and autoprefixing Sass, watching for changes, and starting a basic local server.
-- Example stylesheet (`scss/starter.scss`) highlighting two ways to include and customize Bootstrap.
-- Example JavaScript file (`assets/js/starter.js`) showing how to import all of Bootstrap, or just the parts you need.
-
 ## Usage
 
-- [Node.js](https://nodejs.org/) がインストールされている必要があります。
+1. [Node.js](https://nodejs.org/) インストール必須。
+2. 2つのターミナルタブを開いて、 `npm run server` と `npm run watch` を同時に実行する。
+3. ブラウザのURL欄に <http://localhost:3000> を指定し、動作中のローカルページを確認する。
 
 ```shell
 # Clone the repo
@@ -50,13 +43,13 @@ npm run server
 npm start
 ```
 
-最も簡単な開発を行うには、2つのターミナルタブを開いて、 `npm run server` と `npm run watch` を同時に実行します。
+### 主要コマンドライン
 
-<http://localhost:3000> を開いて、動作中のページを確認してください。
+- ```npm start```
+- ```npm test```
+- ```npm run scriptName``` 
 
 ## Scripts
-
-このリポジトリでは、次のnpmスクリプトを使用できます。 ```npm start``` と ```npm test``` を除いて、残りのスクリプトは ```npm run scriptName``` を使用してコマンドラインから実行できます。 
 
 | Script | 説明 |
 | --- | --- |
@@ -71,7 +64,7 @@ npm start
 
 ## Advanced usage
 
-このリポジトリを、有効化およびカスタマイズできる組み込みのアドオンを使用して、別のレベルに引き上げます。
+さらに便利に使うための使用方法。
 
 ### CSSの最適化
 
@@ -104,7 +97,7 @@ PurgeCSSはPostCSSプラグインであり、追加の[コマンドラインオ�
 
 1. develop ブランチで開発
 2. push
-3. main ブランチに手動でマージ
+3. main ブランチに手動でマージするとアクション発動
 4. FTPアップロード
 ### Reference
 
@@ -115,6 +108,5 @@ PurgeCSSはPostCSSプラグインであり、追加の[コマンドラインオ�
 
 ## Copyright
 
-@mdo 2020-2021 and licensed MIT.
-
-2021 @chum9625
+@ 2021 chum9625
+This software is released under the MIT License, see LICENSE.
