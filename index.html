@@ -40,9 +40,7 @@
         <p class="lead">
           ChumTechは横浜を拠点とするフリーランスのWeb制作事業者です。Webサイト（ホームページ）の制作、管理、運営サポートを行っています。
         </p>
-        <p>
-          制作、実装、公開までトータルで対応のワンストップサービスです。小さなことから身近なWeb屋さんとしてお役に立てたら幸いです。
-        </p>
+        <p>制作、実装、公開までトータルで対応のワンストップサービスです。</p>
       </div>
 
       <hr class="my-5 w-25 mx-0" />
@@ -81,8 +79,16 @@
 
         <div class="col-md-6">
           <img
-            src="./assets/img/c9625-banner-400x160.png"
-            alt="チャムテックのバナー画像"
+            srcset="
+              ./assets/img/chum-admin-280w.png 280w,
+              ./assets/img/chum-admin-320w.png 320w,
+              ./assets/img/chum-admin-400w.png 400w
+            "
+            sizes="(max-width: 320px) 280px,
+            (max-width: 480px) 320px,
+            400px"
+            src="./assets/img/chum-admin-400w.png"
+            alt="サイト管理者のチャムさん"
           />
         </div>
       </div>
