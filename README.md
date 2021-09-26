@@ -1,5 +1,5 @@
 <p align="center">
-  <img src=".github/logo-ct-375x130.png" width="375" height="130" alt="ChumTech logo">
+  <img src=".github/ct-logo-200x72.png" width="200" height="72" alt="ChumTech logo">
 </p>
 
 <h3 align="center">This source is for chum9625.com.</h3>
