@@ -98,7 +98,7 @@ PurgeCSSはPostCSSプラグインであり、追加の[コマンドラインオ�
 1. develop ブランチで開発しpush
 2. プルリクを投げる
 3. main ブランチに手動でマージするとアクション発動
-4. 契約サーバーへFTPアップロード
+4. サーバーへFTPアップロード
 ### Reference
 
 - [GitHub Actionsを使ってFTP自動デプロイ（Webサイト公開）を実現！ソフトを使った手動アップロードを卒業する](https://arrown-blog.com/githubactions-ftp-deploy/)
