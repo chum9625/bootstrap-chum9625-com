@@ -4,13 +4,13 @@
 
 <h3 align="center">This source is for chum9625.com.</h3>
 
-<p align="center">サイト chum9625.com は Bootstrap npm starter template を利用して作りました。</p>
+<p align="center">サイト chum9625.com は Bootstrap npm starter template を活用しています。</p>
 
 ## About
 
-- このリポジトリの原本は、[`bootstrap-npm-starter`](https://github.com/twbs/bootstrap-npm-starter) です。
 - Bootstrap v4で構築されたHTMLシングルページです。
-- `npm start` に `Browser-sync` を組み込み更に効率化しました。
+- このリポジトリの原本は、[`bootstrap-npm-starter`](https://github.com/twbs/bootstrap-npm-starter) です。
+- `npm start` に `Browser-sync` を組み込み更に効率化を図りました。
 - Actions CI は、mainブランチにpushすることでFTP自動デプロイを実現しています。
 - 以下、使い方など原本をGoogle翻訳し、私なりに解釈したものを記載しています。
 
@@ -98,7 +98,7 @@ PurgeCSSはPostCSSプラグインであり、追加の[コマンドラインオ�
 1. develop ブランチで開発しpush
 2. プルリクを投げる
 3. main ブランチに手動でマージするとアクション発動
-4. FTPアップロード
+4. 契約サーバーへFTPアップロード
 ### Reference
 
 - [GitHub Actionsを使ってFTP自動デプロイ（Webサイト公開）を実現！ソフトを使った手動アップロードを卒業する](https://arrown-blog.com/githubactions-ftp-deploy/)

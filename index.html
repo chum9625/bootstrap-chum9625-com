@@ -81,8 +81,16 @@
 
         <div class="col-md-6">
           <img
-            src="./assets/img/c9625-banner-400x160.png"
-            alt="チャムテックのバナー画像"
+            srcset="
+              ./assets/img/chum-admin-280w.png 280w,
+              ./assets/img/chum-admin-320w.png 320w,
+              ./assets/img/chum-admin-400w.png 400w
+            "
+            sizes="(max-width: 320px) 280px,
+            (max-width: 480px) 320px,
+            400px"
+            src="./assets/img/chum-admin-400w.png"
+            alt="サイト管理者のチャムさん"
           />
         </div>
       </div>
