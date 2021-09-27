@@ -1,8 +1,8 @@
 <p align="center">
-  <img src=".github/logo-ct-375x130.png" width="375" height="130" alt="ChumTech logo">
+  <img src=".github/ct-logo-200x72.png" width="200" height="72" alt="ChumTech logo">
 </p>
 
-<h3 align="center">This source is for chum9625.com.</h3>
+<h3 align="center">The site chum9625.com is deployed with this source.</h3>
 
 <p align="center">サイト chum9625.com は Bootstrap npm starter template を活用しています。</p>
 
@@ -98,7 +98,7 @@ PurgeCSSはPostCSSプラグインであり、追加の[コマンドラインオ�
 1. develop ブランチで開発しpush
 2. プルリクを投げる
 3. main ブランチに手動でマージするとアクション発動
-4. 契約サーバーへFTPアップロード
+4. サーバーへFTPアップロード
 ### Reference
 
 - [GitHub Actionsを使ってFTP自動デプロイ（Webサイト公開）を実現！ソフトを使った手動アップロードを卒業する](https://arrown-blog.com/githubactions-ftp-deploy/)
