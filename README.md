@@ -2,7 +2,7 @@
   <img src=".github/ct-logo-200x72.png" width="200" height="72" alt="ChumTech logo">
 </p>
 
-<h3 align="center">This source is for chum9625.com.</h3>
+<h3 align="center">The site chum9625.com is deployed with this source.</h3>
 
 <p align="center">サイト chum9625.com は Bootstrap npm starter template を活用しています。</p>
 
