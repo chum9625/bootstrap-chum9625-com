@@ -2,19 +2,17 @@
   <img src=".github/ct-logo-200x72.png" width="200" height="72" alt="ChumTech logo">
 </p>
 
-<h3 align="center">The site chum9625.com is deployed with this source.</h3>
+<h3 align="center">The site www.chum9625.com is deployed with this source.</h3>
 
-<p align="center">サイト chum9625.com は Bootstrap npm starter template を活用しています。</p>
+<p align="center">www.chum9625.com は Bootstrap npm starter template を活用しています。</p>
 
 ## About
 
 - Bootstrap v4で構築されたHTMLシングルページです。
 - このリポジトリの原本は、[`bootstrap-npm-starter`](https://github.com/twbs/bootstrap-npm-starter) です。
-- `npm start` に `Browser-sync` を組み込み更に効率化を図りました。
+- `npm start` に `Browser-sync` を組み込み更に効率化を図っています。
 - Actions CI は、mainブランチにpushすることでFTP自動デプロイを実現しています。
 - 以下、使い方など原本をGoogle翻訳し、私なりに解釈したものを記載しています。
-
-<!-- [![Build Status](https://github.com/twbs/bootstrap-npm-starter/workflows/CI/badge.svg)](https://github.com/twbs/bootstrap-npm-starter/actions) -->
 
 ## Usage
 
@@ -43,14 +41,12 @@ npm run server
 npm start
 ```
 
-### 主要コマンドライン
-
-- ```npm start```
-- ```npm test```
-- ```npm run scriptName``` 
+- ```npm start``` は ```watch``` と ```server``` と ```sync``` を同時に実行します。
 
 ## Scripts
 
+- ```npm run scriptName```
+ 
 | Script | 説明 |
 | --- | --- |
 | `server` | 開発用の [local server](http://localhost:3000) を起動します。 |
@@ -96,8 +92,8 @@ PurgeCSSはPostCSSプラグインであり、追加の[コマンドラインオ�
 ## Actions CI
 
 1. develop ブランチで開発しpush
-2. プルリクを投げる
-3. main ブランチに手動でマージするとアクション発動
+2. main ブランチにプルリクを投げる
+3. main ブランチを手動でマージするとアクション発動
 4. サーバーへFTPアップロード
 ### Reference
 
