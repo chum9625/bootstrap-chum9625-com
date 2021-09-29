@@ -2,25 +2,23 @@
   <img src=".github/ct-logo-200x72.png" width="200" height="72" alt="ChumTech logo">
 </p>
 
-<h3 align="center">The site chum9625.com is deployed with this source.</h3>
+<h3 align="center">The site www.chum9625.com is deployed with this source.</h3>
 
-<p align="center">サイト chum9625.com は Bootstrap npm starter template を活用しています。</p>
+<p align="center">www.chum9625.com は Bootstrap npm starter template を活用しています。</p>
 
 ## About
 
 - Bootstrap v4で構築されたHTMLシングルページです。
-- このリポジトリの原本は、[`bootstrap-npm-starter`](https://github.com/twbs/bootstrap-npm-starter) です。
 - `npm start` に `Browser-sync` を組み込み更に効率化を図りました。
 - Actions CI は、mainブランチにpushすることでFTP自動デプロイを実現しています。
 - 以下、使い方など原本をGoogle翻訳し、私なりに解釈したものを記載しています。
-
-<!-- [![Build Status](https://github.com/twbs/bootstrap-npm-starter/workflows/CI/badge.svg)](https://github.com/twbs/bootstrap-npm-starter/actions) -->
 
 ## Usage
 
 1. [Node.js](https://nodejs.org/) インストール必須。
 2. 2つのターミナルタブを開いて、 `npm run server` と `npm run watch` を同時に実行する。
-3. ブラウザのURL欄に <http://localhost:3000> を指定し、動作中のローカルページを確認する。
+3. 上記 2 に代わり、 ```npm start``` としてもOK。```start``` は ```server``` ```watch``` ```sync``` 同時に実行する。
+4. ブラウザのURL欄に <http://localhost:3000> を指定し、動作中のローカルページを確認する。
 
 ```shell
 # Clone the repo
@@ -43,13 +41,9 @@ npm run server
 npm start
 ```
 
-### 主要コマンドライン
-
-- ```npm start```
-- ```npm test```
-- ```npm run scriptName``` 
-
 ## Scripts
+
+- ```npm run scriptName``` 
 
 | Script | 説明 |
 | --- | --- |
@@ -96,8 +90,8 @@ PurgeCSSはPostCSSプラグインであり、追加の[コマンドラインオ�
 ## Actions CI
 
 1. develop ブランチで開発しpush
-2. プルリクを投げる
-3. main ブランチに手動でマージするとアクション発動
+2. main ブランチへプルリクを投げる
+3. main ブランチを手動でマージするとアクション発動
 4. サーバーへFTPアップロード
 ### Reference
 
@@ -109,5 +103,3 @@ PurgeCSSはPostCSSプラグインであり、追加の[コマンドラインオ�
 ## Copyright
 
 © 2021 chum9625
-
-This software is released under the MIT License, see LICENSE.
