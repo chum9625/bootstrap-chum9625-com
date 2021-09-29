@@ -1,1 +1,8 @@
 node_modules
+.browserslistrc
+.editorconfig
+.nvmrc
+.stylelintignore
+.stylelintrc
+*.json
+LICENSE.md

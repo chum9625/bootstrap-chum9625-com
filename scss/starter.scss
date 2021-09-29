@@ -80,9 +80,16 @@ $success: #7952b3;
 
 body {
   padding: 3rem 1.5rem;
+  font-family: "Helvetica Neue", Yu Gothic UI, Arial,
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  letter-spacing: 0.05em;
 }
 
 // Style Bootstrap icons
 .bi {
   fill: currentColor;
+}
+
+.padding2rem {
+  padding: 2rem 0;
 }
