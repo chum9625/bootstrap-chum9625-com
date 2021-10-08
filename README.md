@@ -4,7 +4,7 @@
 
 <h3 align="center">The site www.chum9625.com is deployed with this source.</h3>
 
-<p align="center">www.chum9625.com は Bootstrap npm starter template を活用しています。</p>
+<p align="center">www.chum9625.com は Bootstrap npm starter template を活用して作成しました。</p>
 
 ## About
 
