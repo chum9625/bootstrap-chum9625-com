@@ -2,9 +2,9 @@
   <img src=".github/ct-logo-200x77-w.png" width="200" height="77" alt="ChumTech logo">
 </p>
 
-<h3 align="center">The site www.chum9625.com is deployed with this source.</h3>
+<h3 align="center">The site chum9625.com is deployed with this source.</h3>
 
-<p align="center">www.chum9625.com は Bootstrap npm starter template を活用して作成しました。</p>
+<p align="center">chum9625.com は Bootstrap npm starter template を活用して作成しました。</p>
 
 ## About
 
