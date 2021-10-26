@@ -1,16 +1,26 @@
 {
-  "name": "WebエンジニアChumTech",
+  "name": "ChumTech",
   "short_name": "ChumTech",
-  "start_url": "/?utm_source=web_app_manifest",
+  "description": "フリーランスWeb制作者ChumTechのポートフォリオ",
+  "start_url": "/?source=pwa",
   "display": "standalone",
+  "lang": "ja",
+  "dir": "auto",
   "orientation": "any",
-  "background_color": "#fff",
-  "theme_color": "#0aa574",
+  "theme_color": "#E8EAF1",
+  "background_color": "#E8EAF1",
   "icons": [
     {
-      "src": "https://www.chum9625.com/assets/img/icons/icon-512x512.png",
+      "src": "/assets/img/icons/icon-192x192.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/img/icons/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
     }
   ]
 }

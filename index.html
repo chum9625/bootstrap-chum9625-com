@@ -4,16 +4,34 @@
     <meta charset="utf-8" />
     <meta
       name="description"
-      content=" フリーランスのフロントエンドエンジニア、ChumTech／Nobuyo Watariのポートフォリオです。神奈川県横浜市で2016年からWeb制作事業者として活動しており、WordPressやBootstrap等のフレームワークを使用したサイト構築を得意としています。40代、50代、シニア世代の向上心ある女性オーナーさまを応援しています。サイトのリニューアル、レスポンシブ対応などお気軽にご相談ください。"
+      content=" フリーランスのWebエンジニア、ChumTech／Nobuyo Watariのポートフォリオです。神奈川県横浜市で2016年からWeb制作事業者として活動しており、WordPressやBootstrap等のフレームワークを使用したサイト構築を得意としています。モバイル向けの内部施策を重視していますので、個人向けのサービス展開を行っている事業者さま、特に、40代、50代、シニア世代の向上心ある女性オーナーさまを応援しています。サイトのリニューアル、レスポンシブ対応などお気軽にご相談ください。"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:title" content="ChumTech｜フリーランスのフロントエンドエンジニア" />
+    <meta property="og:title" content="ChumTech｜フリーランスWebエンジニア" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.chum9625.com/" />
     <meta property="og:image" content="./assets/img/c9625-ogp-1200x630.png" />
     <!--/* pwa */-->
-    <link rel="manifest" href="/manifest.json" />
-    <meta name="theme-color" content="#0aa574" />
+    <link rel="manifest" href="https://www.chum9625.com/manifest.json" />
+    <meta name="theme-color" content="#E8EAF1" />
+    <meta name="apple-mobile-web-app-title" content="ChumTech" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <!-- Service worker registration -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("/sw.js").then(
+            function (registration) {
+              console.log("ServiceWorker registration successful with scope: ", registration.scope);
+            },
+            function (err) {
+              console.log("ServiceWorker registration failed: ", err);
+            }
+          );
+        });
+      }
+    </script>
     <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
