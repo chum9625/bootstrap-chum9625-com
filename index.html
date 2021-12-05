@@ -132,7 +132,13 @@
         alt="サイト管理者のチャムさん"
       />
       <hr class="my-5" />
-      <p class="text-muted">© 2016-2021 ChumTech</p>
+      <p class="text-muted">
+        &copy; 2016
+        <script>
+          new Date().getFullYear() > 2016 && document.write("-" + new Date().getFullYear());
+        </script>
+        , ChumTech.
+      </p>
     </div>
     <!-- Start of HubSpot Embed Code -->
     <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/20997983.js"></script>
