@@ -2,6 +2,20 @@
 <html lang="ja">
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
     <meta charset="utf-8" />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WP7NC83");
+    </script>
+    <!-- End Google Tag Manager -->
     <meta
       name="description"
       content=" フリーランスのWebエンジニア、ChumTech（チャムテック）のポートフォリオです。横浜市で2016年からWeb制作事業者として活動しています。WordPress、Bootstrap等のフレームワークを使用したサイト構築を得意としています。個人向けサービス展開を行っている事業者さま向けに、初心者でもサイト運営を続けられるよう継続的に改善を行います。サイトのリニューアル、レスポンシブ対応などお気軽にご相談ください。"
@@ -40,20 +54,6 @@
         });
       }
     </script>
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-WP7NC83");
-    </script>
-    <!-- End Google Tag Manager -->
     <link rel="stylesheet" href="assets/css/starter.css" />
     <link rel="shortcut icon" href="./assets/img/icons/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -132,7 +132,13 @@
         alt="サイト管理者のチャムさん"
       />
       <hr class="my-5" />
-      <p class="text-muted">© 2016-2021 ChumTech</p>
+      <p class="text-muted">
+        &copy; 2016
+        <script>
+          new Date().getFullYear() > 2016 && document.write("-" + new Date().getFullYear());
+        </script>
+        , ChumTech.
+      </p>
     </div>
     <!-- Start of HubSpot Embed Code -->
     <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/20997983.js"></script>
