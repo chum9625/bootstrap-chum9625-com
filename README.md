@@ -100,6 +100,18 @@ PurgeCSSはPostCSSプラグインであり、追加の[コマンドラインオ�
 - [read the Actions docs](https://help.github.com/en/actions)
 - [browse the Actions Marketplace](https://github.com/marketplace/actions).
 
+---
+
+## セキュリティアラート対応手順
+
+1. ``` npm install -g npm-check-updates ```
+2. ``` ncu ```
+3. ``` ncu -u ```
+4. ``` rm package-lock.json ```
+5. ``` npm update ```
+6. アップデートがまだ入手できない場合、脆弱性を解決するプルリクエストを作成。
+   1. [リポジトリ内の脆弱な依存関係を表示・更新する](https://docs.github.com/ja/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/viewing-and-updating-vulnerable-dependencies-in-your-repository)
+
 ## Copyright
 
 © 2021 chum9625
