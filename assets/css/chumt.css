@@ -4,6 +4,6 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.h1logo:hover {
-  transform: rotatez(360deg);
+.h1logo:active {
+  transform: scale(1.1);
 }
