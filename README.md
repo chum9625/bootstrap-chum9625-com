@@ -9,7 +9,7 @@
 ## About
 
 - Bootstrap v4で構築されたHTMLシングルページです。
-- `npm start` に `Browser-sync` を組み込み更に効率化を図りました。
+- ~~`npm start` に `Browser-sync` を組み込み更に効率化を図りました。~~ (Fix according to the alert.)
 - Actions CI は、mainブランチにpushすることでFTP自動デプロイを実現しています。
 - 以下、使い方など原本をGoogle翻訳し、私なりに解釈したものを記載しています。
 
@@ -112,7 +112,8 @@ PurgeCSSはPostCSSプラグインであり、追加の[コマンドラインオ�
 3. ``` ncu -u ```
    1. package.jsonの書き換え。
 4. ``` rm package-lock.json ```
-5. ``` npm i ``` package-lock.jsonの生成。
+5. ``` npm i ```
+   1. package-lock.jsonの生成。
 6. アップデートがまだ入手できない場合、脆弱性を解決するプルリクエストを作成。
    1. [リポジトリ内の脆弱な依存関係を表示・更新する](https://docs.github.com/ja/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/viewing-and-updating-vulnerable-dependencies-in-your-repository)
 
