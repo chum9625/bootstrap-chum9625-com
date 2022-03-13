@@ -1,6 +1,6 @@
 const CACHE_NAME = "ChumTech-2021-10-26";
-const OFFLINE_URL = "https://www.chum9625.com";
-const urlsToCache = ["https://www.chum9625.com"];
+const OFFLINE_URL = "https://chum9625.com";
+const urlsToCache = ["https://chum9625.com"];
 const neverCacheUrls = /\/wp-admin|\/wp-login|preview=true|\/cart|ajax|login/;
 
 self.addEventListener("install", (event) => {
