@@ -120,4 +120,4 @@ PurgeCSSはPostCSSプラグインであり、追加の[コマンドラインオ�
 
 ## Copyright
 
-© 2022 chum9625
+© 2021 chum9625
