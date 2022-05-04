@@ -87,12 +87,18 @@ npm purgecss --css assets/css/starter.css --content index.html --output assets/c
 
 PurgeCSSはPostCSSプラグインであり、追加の[コマンドラインオプション](https://purgecss.com/CLI.html)など、少しの追加作業で正確なニーズに合わせて[構成できます](https://purgecss.com/configuration.html) 。 
 
+
+---
+
+
 ## Actions CI
 
 1. develop ブランチで開発しpush
 2. main ブランチにプルリクを投げる
 3. main ブランチを手動でマージするとアクション発動
 4. サーバーへFTPアップロード
+
+
 ### Reference
 
 - [GitHub Actionsを使ってFTP自動デプロイ（Webサイト公開）を実現！ソフトを使った手動アップロードを卒業する](https://arrown-blog.com/githubactions-ftp-deploy/)
@@ -100,23 +106,21 @@ PurgeCSSはPostCSSプラグインであり、追加の[コマンドラインオ�
 - [read the Actions docs](https://help.github.com/en/actions)
 - [browse the Actions Marketplace](https://github.com/marketplace/actions).
 
+
 ---
+
 
 ## セキュリティアラート対応手順
 
 1. ``` npm i -g npm-check-updates ``` ※スペル注意❣ **`updates`**
    1. 初回のみグローバルにインストール。ncuコマンドが使えるようになる。
    2. その後はpackage.jsonがある対象ディレクトリで `ncu` を実行。
-2. ``` ncu ```
-   1. 変更前と変更後のリスト表示。
-3. ``` ncu -u ```
-   1. package.json を更新する。
-4. ``` rm package-lock.json ```
-   1. 現存のpackage-lock.jsonを削除する。  
-5. ``` npm i ```
-   1. package-lock.jsonの生成。
+2. ``` ncu ``` 変更前と変更後のリスト表示。
+3. ``` ncu -u ``` package.json を更新。
+4. ``` rm package-lock.json ``` 現存のpackage-lock.jsonを削除。  
+5. ``` npm i ``` package-lock.jsonの生成。
 6. アップデートがまだ入手できない場合、脆弱性を解決するプルリクエストを作成。
-   1. [リポジトリ内の脆弱な依存関係を表示・更新する](https://docs.github.com/ja/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/viewing-and-updating-vulnerable-dependencies-in-your-repository)
+   - [リポジトリ内の脆弱な依存関係を表示・更新する](https://docs.github.com/ja/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/viewing-and-updating-vulnerable-dependencies-in-your-repository)
 
 ## Copyright
 
