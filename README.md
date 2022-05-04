@@ -115,10 +115,10 @@ PurgeCSSはPostCSSプラグインであり、追加の[コマンドラインオ�
 1. ``` npm i -g npm-check-updates ``` ※スペル注意❣ **`updates`**
    1. 初回のみグローバルにインストール。ncuコマンドが使えるようになる。
    2. その後はpackage.jsonがある対象ディレクトリで `ncu` を実行。
-2. ``` ncu ``` 変更前と変更後のリスト表示。
-3. ``` ncu -u ``` package.json を更新。
-4. ``` rm package-lock.json ``` 現存のpackage-lock.jsonを削除。  
-5. ``` npm i ``` package-lock.jsonの生成。
+2. ``` ncu ``` 💡 変更前と変更後のリスト表示。
+3. ``` ncu -u ``` 💡 package.json を更新。
+4. ``` rm package-lock.json ``` 💡 現存のpackage-lock.jsonを削除。  
+5. ``` npm i ``` 💡 package-lock.jsonの生成。
 6. アップデートがまだ入手できない場合、脆弱性を解決するプルリクエストを作成。
    - [リポジトリ内の脆弱な依存関係を表示・更新する](https://docs.github.com/ja/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/viewing-and-updating-vulnerable-dependencies-in-your-repository)
 
