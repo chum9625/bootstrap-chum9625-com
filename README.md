@@ -9,7 +9,7 @@
 ## About
 
 - Bootstrap v4で構築されたHTMLシングルページです。
-- `npm start` に `Browser-sync` を組み込み更に効率化を図りました。
+- ~~`npm start` に `Browser-sync` を組み込み更に効率化を図りました。~~ (Fix according to the alert.)
 - Actions CI は、mainブランチにpushすることでFTP自動デプロイを実現しています。
 - 以下、使い方など原本をGoogle翻訳し、私なりに解釈したものを記載しています。
 
@@ -87,12 +87,18 @@ npm purgecss --css assets/css/starter.css --content index.html --output assets/c
 
 PurgeCSSはPostCSSプラグインであり、追加の[コマンドラインオプション](https://purgecss.com/CLI.html)など、少しの追加作業で正確なニーズに合わせて[構成できます](https://purgecss.com/configuration.html) 。 
 
+
+---
+
+
 ## Actions CI
 
 1. develop ブランチで開発しpush
 2. main ブランチにプルリクを投げる
 3. main ブランチを手動でマージするとアクション発動
 4. サーバーへFTPアップロード
+
+
 ### Reference
 
 - [GitHub Actionsを使ってFTP自動デプロイ（Webサイト公開）を実現！ソフトを使った手動アップロードを卒業する](https://arrown-blog.com/githubactions-ftp-deploy/)
@@ -100,17 +106,23 @@ PurgeCSSはPostCSSプラグインであり、追加の[コマンドラインオ�
 - [read the Actions docs](https://help.github.com/en/actions)
 - [browse the Actions Marketplace](https://github.com/marketplace/actions).
 
+
 ---
+
 
 ## セキュリティアラート対応手順
 
-1. ``` npm install -g npm-check-updates ```
-2. ``` ncu ```
-3. ``` ncu -u ```
-4. ``` rm package-lock.json ```
-5. ``` npm update ```
-6. アップデートがまだ入手できない場合、脆弱性を解決するプルリクエストを作成。
-   1. [リポジトリ内の脆弱な依存関係を表示・更新する](https://docs.github.com/ja/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/viewing-and-updating-vulnerable-dependencies-in-your-repository)
+1. ` git pull ` 💡 ローカルリポジトリを更新。
+2. ` npm i -g npm-check-updates ` ※スペル注意❣ **`updates`**
+   1. 初回のみグローバルにインストール。**ncuコマンド**が使えるようになる。
+   2. その後はpackage.jsonがある対象ディレクトリで `ncu` を実行。
+3. ` ncu ` 💡 変更前と変更後のリスト表示。
+4. ` ncu -u ` 💡 package.json を更新。
+5. ` rm package-lock.json ` 💡 現存のpackage-lock.jsonを削除。  
+6. ` npm i ` 💡 package-lock.jsonの生成。
+7. ` git push origin HEAD ` 💡 リモートにプッシュ。
+8. アップデートがまだ入手できない場合、脆弱性を解決するプルリクエストを作成。
+   - [リポジトリ内の脆弱な依存関係を表示・更新する](https://docs.github.com/ja/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/viewing-and-updating-vulnerable-dependencies-in-your-repository)
 
 ## Copyright
 
