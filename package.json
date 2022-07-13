@@ -9,7 +9,7 @@
     "bootstrap-icons": "^1.8.3",
     "fraction.js": "^4.2.0",
     "got": "^12.1.0",
-    "jsonpointer": "^5.0.0",
+    "jsonpointer": "^5.0.1",
     "log-symbols": "^5.1.0",
     "node-sass": "^7.0.1",
     "postcss": "^8.4.14",
