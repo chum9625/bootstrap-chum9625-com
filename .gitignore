@@ -4,5 +4,6 @@ node_modules
 .nvmrc
 .stylelintignore
 .stylelintrc
+.node-version
 # *.json
 LICENSE.md
