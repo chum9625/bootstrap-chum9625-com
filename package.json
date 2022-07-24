@@ -8,7 +8,7 @@
     "bootstrap": "^5.2.0",
     "bootstrap-icons": "^1.9.1",
     "fraction.js": "^4.2.0",
-    "got": "^12.1.0",
+    "got": "^12.2.0",
     "jsonpointer": "^5.0.1",
     "log-symbols": "^5.1.0",
     "node-sass": "^7.0.1",
