@@ -120,8 +120,10 @@ PurgeCSSはPostCSSプラグインであり、追加の[コマンドラインオ�
 4. ` ncu -u ` 💡 package.json を更新。
 5. ` rm package-lock.json ` 💡 現存のpackage-lock.jsonを削除。  
 6. ` npm i ` 💡 package-lock.jsonの生成。
-7. ` git push origin HEAD ` 💡 リモートにプッシュ。
-8. アップデートがまだ入手できない場合、脆弱性を解決するプルリクエストを作成。
+7. ` git add . `
+8. ` git commit -m "update" `
+9. ` git push origin HEAD ` 💡 リモートにプッシュ。
+10. アップデートがまだ入手できない場合、脆弱性を解決するプルリクエストを作成。
    - [リポジトリ内の脆弱な依存関係を表示・更新する](https://docs.github.com/ja/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/viewing-and-updating-vulnerable-dependencies-in-your-repository)
 
 ## Copyright
