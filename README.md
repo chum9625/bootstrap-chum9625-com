@@ -112,7 +112,7 @@ PurgeCSSはPostCSSプラグインであり、追加の[コマンドラインオ�
 
 ## セキュリティアラート対応手順
 
-1. ` git pull ` 💡 ローカルリポジトリを更新。
+1. ` git pull origin HEAD ` 💡 ローカルリポジトリを更新。
 2. ` npm i -g npm-check-updates ` ※スペル注意❣ **`updates`**
    1. 初回のみグローバルにインストール。**ncuコマンド**が使えるようになる。
    2. その後はpackage.jsonがある対象ディレクトリで `ncu` を実行。
