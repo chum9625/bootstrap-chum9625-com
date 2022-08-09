@@ -118,7 +118,7 @@ PurgeCSSはPostCSSプラグインであり、追加の[コマンドラインオ�
    2. その後はpackage.jsonがある対象ディレクトリで `ncu` を実行。
 3. ` ncu ` 💡 変更前と変更後のリスト表示。
 4. ` ncu -u ` 💡 package.json を更新。
-5. ` rm package-lock.json ` 💡 現存のpackage-lock.jsonを削除。  
+5. ~~` rm package-lock.json ` 💡 現存のpackage-lock.jsonを削除。~~
 6. ` npm i ` 💡 package-lock.jsonの生成。
 7. ` git add . `
 8. ` git commit -m "update" `
