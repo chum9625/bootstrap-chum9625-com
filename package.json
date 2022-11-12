@@ -6,7 +6,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.13",
     "bootstrap": "^5.2.2",
-    "bootstrap-icons": "^1.10.0",
+    "bootstrap-icons": "^1.10.1",
     "fraction.js": "^4.2.0",
     "got": "^12.5.2",
     "jsonpointer": "^5.0.1",
