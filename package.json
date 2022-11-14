@@ -6,7 +6,7 @@
   "dependencies": {
     "autoprefixer": "^10.4.13",
     "bootstrap": "^5.2.2",
-    "bootstrap-icons": "^1.10.1",
+    "bootstrap-icons": "^1.10.2",
     "fraction.js": "^4.2.0",
     "got": "^12.5.2",
     "jsonpointer": "^5.0.1",
@@ -14,7 +14,7 @@
     "node-sass": "^8.0.0",
     "postcss": "^8.4.19",
     "purgecss": "^5.0.0",
-    "stylelint": "^14.14.1",
+    "stylelint": "^14.15.0",
     "stylelint-config-recommended-scss": "^8.0.0",
     "stylelint-config-twbs-bootstrap": "^7.0.0",
     "stylelint-scss": "^4.3.0",
