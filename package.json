@@ -19,7 +19,7 @@
     "stylelint-config-twbs-bootstrap": "^7.0.0",
     "stylelint-scss": "^4.4.0",
     "table": "^6.8.1",
-    "ua-parser-js": "^1.0.33",
+    "ua-parser-js": "^1.0.34",
     "undefsafe": "^2.0.5",
     "workbox-build": "^6.5.4",
     "workbox-sw": "^6.5.4",
