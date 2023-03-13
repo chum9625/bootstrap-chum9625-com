@@ -16,7 +16,7 @@
     "purgecss": "^5.0.0",
     "stylelint": "^15.2.0",
     "stylelint-config-recommended-scss": "^9.0.1",
-    "stylelint-config-twbs-bootstrap": "^7.0.0",
+    "stylelint-config-twbs-bootstrap": "^8.0.0",
     "stylelint-scss": "^4.4.0",
     "table": "^6.8.1",
     "ua-parser-js": "^1.0.34",
