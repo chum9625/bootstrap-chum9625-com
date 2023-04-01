@@ -17,7 +17,7 @@
     "stylelint": "^15.3.0",
     "stylelint-config-recommended-scss": "^9.0.1",
     "stylelint-config-twbs-bootstrap": "^8.0.0",
-    "stylelint-scss": "^4.5.0",
+    "stylelint-scss": "^4.6.0",
     "table": "^6.8.1",
     "ua-parser-js": "^1.0.34",
     "undefsafe": "^2.0.5",
