@@ -14,7 +14,7 @@
     "node-sass": "^8.0.0",
     "postcss": "^8.4.23",
     "purgecss": "^5.0.0",
-    "stylelint": "^15.6.0",
+    "stylelint": "^15.6.1",
     "stylelint-config-recommended-scss": "^11.0.0",
     "stylelint-config-twbs-bootstrap": "^10.0.0",
     "stylelint-scss": "^5.0.0",
