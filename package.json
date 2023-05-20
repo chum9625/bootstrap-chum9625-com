@@ -11,7 +11,7 @@
     "got": "^12.6.0",
     "jsonpointer": "^5.0.1",
     "log-symbols": "^5.1.0",
-    "node-sass": "^8.0.0",
+    "node-sass": "^9.0.0",
     "postcss": "^8.4.23",
     "purgecss": "^5.0.0",
     "stylelint": "^15.6.2",
