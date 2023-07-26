@@ -5,7 +5,7 @@
   "main": "sw.js",
   "dependencies": {
     "autoprefixer": "^10.4.14",
-    "bootstrap": "^5.3.0",
+    "bootstrap": "^5.3.1",
     "bootstrap-icons": "^1.10.5",
     "fraction.js": "^4.2.0",
     "got": "^13.0.0",
