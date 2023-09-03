@@ -7,7 +7,7 @@
     "autoprefixer": "^10.4.15",
     "bootstrap": "^5.3.1",
     "bootstrap-icons": "^1.10.5",
-    "fraction.js": "^4.3.1",
+    "fraction.js": "^4.3.6",
     "got": "^13.0.0",
     "jsonpointer": "^5.0.1",
     "log-symbols": "^5.1.0",
