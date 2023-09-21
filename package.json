@@ -4,7 +4,7 @@
   "description": "<p align=\"center\">   <img src=\".github/ct-logo-200x77-w.png\" width=\"200\" height=\"77\" alt=\"ChumTech logo\"> </p>",
   "main": "sw.js",
   "dependencies": {
-    "autoprefixer": "^10.4.15",
+    "autoprefixer": "^10.4.16",
     "bootstrap": "^5.3.2",
     "bootstrap-icons": "^1.11.1",
     "fraction.js": "^4.3.6",
