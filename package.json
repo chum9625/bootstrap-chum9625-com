@@ -15,7 +15,7 @@
     "postcss": "^8.4.31",
     "purgecss": "^5.0.0",
     "stylelint": "^15.11.0",
-    "stylelint-config-recommended-scss": "^13.0.0",
+    "stylelint-config-recommended-scss": "^13.1.0",
     "stylelint-config-twbs-bootstrap": "^11.0.1",
     "stylelint-scss": "^5.3.0",
     "table": "^6.8.1",
