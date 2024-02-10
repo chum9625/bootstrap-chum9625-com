@@ -12,7 +12,7 @@
     "jsonpointer": "^5.0.1",
     "log-symbols": "^6.0.0",
     "node-sass": "^9.0.0",
-    "postcss": "^8.4.33",
+    "postcss": "^8.4.35",
     "purgecss": "^5.0.0",
     "stylelint": "^16.2.1",
     "stylelint-config-recommended-scss": "^14.0.0",
